@@ -111,7 +111,7 @@ class PreviewController extends Controller
 			}
 
 			$result = [
-					"name" => $blockType->name,
+					"name" => Craft::t('site', $blockType->name),
 					"handle" => $blockType->handle,
 					"description" => $blockTypeConfig->description,
 					"descriptionHTML" => Markdown::process($blockTypeConfig->description),
